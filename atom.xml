@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-03-06T14:49:29.484Z</updated>
+    <updated>2020-03-06T15:02:43.482Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -16,11 +16,12 @@
         <link href="https://StevenJokes.github.io/post/helloeverybody/">
         </link>
         <updated>2020-03-06T14:45:28.000Z</updated>
-        <summary type="html"><![CDATA[<p>欢迎来的我的 <strong>Gridea</strong> 的博客🙊！</p>
-]]></summary>
         <content type="html"><![CDATA[<p>欢迎来的我的 <strong>Gridea</strong> 的博客🙊！</p>
-<!-- more -->
 <p><a href="https://gridea.dev/gridea-start/">gridea-start</a></p>
+<p>基本配置就跟上面一样。</p>
+<p>只是后来为了同步方便，我又把<strong>我的文档</strong>放在<strong>OneDrive</strong>里，那这个时候就需要注意了，在换我这个主题<a href="https://github.com/ITJoker233/Gridea-theme-Chic">Chic</a>（感谢大佬ITJoker233，祝早日拿高薪Offer！)</p>
+<p>那就需要再这么操作一下：设置-<img src="https://StevenJokes.github.io//post-images/1583506813218.png" alt="重换Gridea目录" loading="lazy"></p>
+<p>哈哈，希望别的Win10小伙伴，不要和我一样<strong>犯傻</strong>哦！</p>
 ]]></content>
     </entry>
 </feed>
