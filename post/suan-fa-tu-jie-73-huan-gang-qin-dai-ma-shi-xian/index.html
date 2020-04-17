@@ -81,7 +81,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1587138090280" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1587141681162" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -100,7 +100,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1587138090280" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1587141681162" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -173,9 +173,9 @@
                                         </a>
                                         <span class="post-time">&#x65E5;&#x671F;: <a href="#">2020-04-17</a></span>
                                         <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
-                                    href="#">2.5
+                                    href="#">0.1
                                     &#x5206;&#x949F;</a></span>
-                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">507</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">9</a></span>
                                         
                                                 阅读量:
                                                 <span data-hk-page="current"> - </span>
@@ -184,97 +184,13 @@
                                     
                         </header>
                         <div class="post-content">
-                            <p>#!/usr/bin/env python</p>
-<h1 id="codingutf-8">coding=utf-8</h1>
-<p>'''<br>
-@version:<br>
-@Author: steven<br>
-@Date: 2020-04-17 21:30:12<br>
-@LastEditors: steven<br>
-@LastEditTime: 2020-04-17 23:38:12<br>
-@Description: 算法图解 7.3 换钢琴 代码实现<br>
-'''</p>
-<h1 id="添加节点和邻居">添加节点和邻居</h1>
-<p>graph = {}</p>
-<p>graph[&quot;muscbk&quot;] = {} # 起点为musicbook,简称muscbk<br>
-graph[&quot;muscbk&quot;][&quot;record&quot;] = 5<br>
-graph[&quot;muscbk&quot;][&quot;poster&quot;] = 0</p>
-<p>graph[&quot;record&quot;] = {}<br>
-graph[&quot;record&quot;][&quot;guitar&quot;] = 15<br>
-graph[&quot;record&quot;][&quot;grum&quot;] = 20</p>
-<p>graph[&quot;poster&quot;] = {}<br>
-graph[&quot;poster&quot;][&quot;guitar&quot;] = 30<br>
-graph[&quot;poster&quot;][&quot;grum&quot;] = 35</p>
-<p>graph[&quot;guitar&quot;] = {}<br>
-graph[&quot;guitar&quot;][&quot;piano&quot;] = 20</p>
-<p>graph[&quot;grum&quot;] = {}<br>
-graph[&quot;grum&quot;][&quot;piano&quot;] = 10</p>
-<p>graph[&quot;piano&quot;] = {}  # 终点piano没有邻居</p>
-<h1 id="存储每个节点开销的散列表">存储每个节点开销的散列表</h1>
-<p>infinity = float(&quot;inf&quot;)</p>
-<p>costs = {}<br>
-costs[&quot;record&quot;] = 5<br>
-costs[&quot;poster&quot;] = 0<br>
-costs[&quot;guitar&quot;] = infinity<br>
-costs[&quot;grum&quot;] = infinity<br>
-costs[&quot;piano&quot;] = infinity</p>
-<h1 id="存储父节点的散列表">存储父节点的散列表</h1>
-<p>parents = {}<br>
-parents[&quot;record&quot;] = &quot;muscbk&quot;<br>
-parents[&quot;poster&quot;] = &quot;muscbk&quot;<br>
-parents[&quot;guitar&quot;] = None<br>
-parents[&quot;drum&quot;] = None<br>
-parents[&quot;piano&quot;] = None</p>
-<p>processed = []  # 一个数组，用于记录处理过的节点。因为对于同一个节点，不用处理多次。</p>
-<p>def find_lowest_cost_node(costs):<br>
-# (2).to initial lowest_cost,removes other guessworks.<br>
-lowest_cost = float(&quot;inf&quot;)<br>
-# to initial cost node.<br>
-lowest_cost_node = None<br>
-# 遍历所有的节点<br>
-for node in costs:<br>
-cost = costs[node]<br>
-# 如果当前节点的开销更低且未处理过<br>
-if cost &lt; lowest_cost and node not in processed:<br>
-# 就将其视为开销最低的节点<br>
-lowest_cost = cost<br>
-lowest_cost_node = node<br>
-return lowest_cost_node</p>
-<h1 id="在未处理的节点中找出开销最小的节点">在未处理的节点中找出开销最小的节点</h1>
-<p>node = find_lowest_cost_node(costs)</p>
-<h1 id="这个while循环在所有节点都被处理过后结束">这个while循环在所有节点都被处理过后结束</h1>
-<p>while node is not None:<br>
-cost = costs[node]<br>
-# 遍历当前节点的所有邻居<br>
-neighbors = graph[node]<br>
-for n in neighbors.keys():<br>
-new_cost = cost + neighbors[n]<br>
-# 如果经当前节点前往该邻居更近<br>
-if costs[n] &gt; new_cost:<br>
-# 就更新该邻居的开销<br>
-costs[n] = new_cost<br>
-# 同时将该邻居的父节点设置为当前节点<br>
-parents[n] = node<br>
-# 将当前节点标记为处理过<br>
-processed.append(node)<br>
-# 找出接下来要处理的节点，并做循环<br>
-node = find_lowest_cost_node(costs)</p>
-<p>if <strong>name</strong> == '<strong>main</strong>':<br>
-print(&quot;Cost from the start to each node:&quot;)<br>
-print(costs)</p>
+                            <p><img src="https://StevenJokes.github.io//post-images/1587141661513.jpg" alt="换钢琴的有向图" loading="lazy"><br>
+https://github.com/StevenJokes/algs_py/blob/master/musicbk_piano.py</p>
 
                         </div>
                         
                             <div class="post-toc">
-                                <ul class="markdownIt-TOC">
-<li><a href="#codingutf-8">coding=utf-8</a></li>
-<li><a href="#%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9%E5%92%8C%E9%82%BB%E5%B1%85">添加节点和邻居</a></li>
-<li><a href="#%E5%AD%98%E5%82%A8%E6%AF%8F%E4%B8%AA%E8%8A%82%E7%82%B9%E5%BC%80%E9%94%80%E7%9A%84%E6%95%A3%E5%88%97%E8%A1%A8">存储每个节点开销的散列表</a></li>
-<li><a href="#%E5%AD%98%E5%82%A8%E7%88%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%95%A3%E5%88%97%E8%A1%A8">存储父节点的散列表</a></li>
-<li><a href="#%E5%9C%A8%E6%9C%AA%E5%A4%84%E7%90%86%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AD%E6%89%BE%E5%87%BA%E5%BC%80%E9%94%80%E6%9C%80%E5%B0%8F%E7%9A%84%E8%8A%82%E7%82%B9">在未处理的节点中找出开销最小的节点</a></li>
-<li><a href="#%E8%BF%99%E4%B8%AAwhile%E5%BE%AA%E7%8E%AF%E5%9C%A8%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E9%83%BD%E8%A2%AB%E5%A4%84%E7%90%86%E8%BF%87%E5%90%8E%E7%BB%93%E6%9D%9F">这个while循环在所有节点都被处理过后结束</a></li>
-</ul>
-
+                                
                             </div>
                             
                                 
@@ -304,8 +220,8 @@ print(costs)</p>
                         <i class="post-share"></i>
                         <span>&#x5206;&#x4EAB;:</span>
                                                                     <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/"><i class="fa fa-qrcode"></i></a>
-                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/&sharesource=qzone&title=算法图解 7.3 换钢琴 代码实现&pics=https://StevenJokes.github.io//images/avatar.png?v=1587138090280&summary="><i class="fa fa-qq"></i></a>
-                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/&sharesource=weibo&title=算法图解 7.3 换钢琴 代码实现 + " - " + &pic="https://StevenJokes.github.io//images/avatar.png?v=1587138090280 "><i class="fa fa-weibo "></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/&sharesource=qzone&title=算法图解 7.3 换钢琴 代码实现&pics=https://StevenJokes.github.io//images/avatar.png?v=1587141681162&summary="><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/&sharesource=weibo&title=算法图解 7.3 换钢琴 代码实现 + " - " + &pic="https://StevenJokes.github.io//images/avatar.png?v=1587141681162 "><i class="fa fa-weibo "></i></a>
 
                                                                     </span>
                                                                     
@@ -430,7 +346,7 @@ print(costs)</p>
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1587138090280);
+                    newDate.setTime(1587141681162);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
