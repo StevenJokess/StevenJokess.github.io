@@ -162,7 +162,7 @@
                     <article class="post-wrap">
                         <header class="post-header">
                             <h1 class="post-title">
-                                Hello，everybody！
+                                算法图解 7.3 换钢琴 代码实现
                             </h1>
                             
                                     <!--zh-->
@@ -171,18 +171,12 @@
                                         <a itemprop="author" rel="author" href="/">
                                             Steven Jokes
                                         </a>
-                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2018-12-12</a></span>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2020-04-17</a></span>
                                         <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
-                                    href="#">1.1
+                                    href="#">2.5
                                     &#x5206;&#x949F;</a></span>
-                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">303</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">507</a></span>
                                         
-                                            <span class="post-category">&#x5206;&#x7C7B;:
-                                
-                                <a href="https://StevenJokes.github.io/tag/8ZwES1i21/">Gridea</a>
-                                
-                            </span>
-                                            
                                                 阅读量:
                                                 <span data-hk-page="current"> - </span>
                                                 
@@ -190,37 +184,95 @@
                                     
                         </header>
                         <div class="post-content">
-                            <p>👏  欢迎来的我的 <strong>Gridea</strong> 的博客<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                            <p>#!/usr/bin/env python</p>
+<h1 id="codingutf-8">coding=utf-8</h1>
+<p>'''<br>
+@version:<br>
+@Author: steven<br>
+@Date: 2020-04-17 21:30:12<br>
+@LastEditors: steven<br>
+@LastEditTime: 2020-04-17 23:38:12<br>
+@Description: 算法图解 7.3 换钢琴 代码实现<br>
+'''</p>
+<h1 id="添加节点和邻居">添加节点和邻居</h1>
+<p>graph = {}</p>
+<p>graph[&quot;muscbk&quot;] = {} # 起点为musicbook,简称muscbk<br>
+graph[&quot;muscbk&quot;][&quot;record&quot;] = 5<br>
+graph[&quot;muscbk&quot;][&quot;poster&quot;] = 0</p>
+<p>graph[&quot;record&quot;] = {}<br>
+graph[&quot;record&quot;][&quot;guitar&quot;] = 15<br>
+graph[&quot;record&quot;][&quot;grum&quot;] = 20</p>
+<p>graph[&quot;poster&quot;] = {}<br>
+graph[&quot;poster&quot;][&quot;guitar&quot;] = 30<br>
+graph[&quot;poster&quot;][&quot;grum&quot;] = 35</p>
+<p>graph[&quot;guitar&quot;] = {}<br>
+graph[&quot;guitar&quot;][&quot;piano&quot;] = 20</p>
+<p>graph[&quot;grum&quot;] = {}<br>
+graph[&quot;grum&quot;][&quot;piano&quot;] = 10</p>
+<p>graph[&quot;piano&quot;] = {}  # 终点piano没有邻居</p>
+<h1 id="存储每个节点开销的散列表">存储每个节点开销的散列表</h1>
+<p>infinity = float(&quot;inf&quot;)</p>
+<p>costs = {}<br>
+costs[&quot;record&quot;] = 5<br>
+costs[&quot;poster&quot;] = 0<br>
+costs[&quot;guitar&quot;] = infinity<br>
+costs[&quot;grum&quot;] = infinity<br>
+costs[&quot;piano&quot;] = infinity</p>
+<h1 id="存储父节点的散列表">存储父节点的散列表</h1>
+<p>parents = {}<br>
+parents[&quot;record&quot;] = &quot;muscbk&quot;<br>
+parents[&quot;poster&quot;] = &quot;muscbk&quot;<br>
+parents[&quot;guitar&quot;] = None<br>
+parents[&quot;drum&quot;] = None<br>
+parents[&quot;piano&quot;] = None</p>
+<p>processed = []  # 一个数组，用于记录处理过的节点。因为对于同一个节点，不用处理多次。</p>
+<p>def find_lowest_cost_node(costs):<br>
+# (2).to initial lowest_cost,removes other guessworks.<br>
+lowest_cost = float(&quot;inf&quot;)<br>
+# to initial cost node.<br>
+lowest_cost_node = None<br>
+# 遍历所有的节点<br>
+for node in costs:<br>
+cost = costs[node]<br>
+# 如果当前节点的开销更低且未处理过<br>
+if cost &lt; lowest_cost and node not in processed:<br>
+# 就将其视为开销最低的节点<br>
+lowest_cost = cost<br>
+lowest_cost_node = node<br>
+return lowest_cost_node</p>
+<h1 id="在未处理的节点中找出开销最小的节点">在未处理的节点中找出开销最小的节点</h1>
+<p>node = find_lowest_cost_node(costs)</p>
+<h1 id="这个while循环在所有节点都被处理过后结束">这个while循环在所有节点都被处理过后结束</h1>
+<p>while node is not None:<br>
+cost = costs[node]<br>
+# 遍历当前节点的所有邻居<br>
+neighbors = graph[node]<br>
+for n in neighbors.keys():<br>
+new_cost = cost + neighbors[n]<br>
+# 如果经当前节点前往该邻居更近<br>
+if costs[n] &gt; new_cost:<br>
+# 就更新该邻居的开销<br>
+costs[n] = new_cost<br>
+# 同时将该邻居的父节点设置为当前节点<br>
+parents[n] = node<br>
+# 将当前节点标记为处理过<br>
+processed.append(node)<br>
+# 找出接下来要处理的节点，并做循环<br>
+node = find_lowest_cost_node(costs)</p>
+<p>if <strong>name</strong> == '<strong>main</strong>':<br>
+print(&quot;Cost from the start to each node:&quot;)<br>
+print(costs)</p>
 
                         </div>
                         
                             <div class="post-toc">
                                 <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E7%89%B9%E6%80%A7">特性👇</a></li>
-</ul>
-</li>
+<li><a href="#codingutf-8">coding=utf-8</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9%E5%92%8C%E9%82%BB%E5%B1%85">添加节点和邻居</a></li>
+<li><a href="#%E5%AD%98%E5%82%A8%E6%AF%8F%E4%B8%AA%E8%8A%82%E7%82%B9%E5%BC%80%E9%94%80%E7%9A%84%E6%95%A3%E5%88%97%E8%A1%A8">存储每个节点开销的散列表</a></li>
+<li><a href="#%E5%AD%98%E5%82%A8%E7%88%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%95%A3%E5%88%97%E8%A1%A8">存储父节点的散列表</a></li>
+<li><a href="#%E5%9C%A8%E6%9C%AA%E5%A4%84%E7%90%86%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AD%E6%89%BE%E5%87%BA%E5%BC%80%E9%94%80%E6%9C%80%E5%B0%8F%E7%9A%84%E8%8A%82%E7%82%B9">在未处理的节点中找出开销最小的节点</a></li>
+<li><a href="#%E8%BF%99%E4%B8%AAwhile%E5%BE%AA%E7%8E%AF%E5%9C%A8%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E9%83%BD%E8%A2%AB%E5%A4%84%E7%90%86%E8%BF%87%E5%90%8E%E7%BB%93%E6%9D%9F">这个while循环在所有节点都被处理过后结束</a></li>
 </ul>
 
                             </div>
@@ -236,7 +288,7 @@
 
                                                 <p class="copyright-item">
                                                     <span>&#x6C38;&#x4E45;&#x94FE;&#x63A5;:</span>
-                                                    <span><a href="https://StevenJokes.github.io/post/hello-gridea/">https://StevenJokes.github.io/post/hello-gridea/</a></span>
+                                                    <span><a href="https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/">https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/</a></span>
                                                 </p>
 
                                                 <p class="copyright-item">
@@ -251,13 +303,9 @@
                                                                     <span style="margin-right:15px">
                         <i class="post-share"></i>
                         <span>&#x5206;&#x4EAB;:</span>
-                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://StevenJokes.github.io/post/hello-gridea/"><i class="fa fa-qrcode"></i></a>
-                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://StevenJokes.github.io/post/hello-gridea/&sharesource=qzone&title=Hello，everybody！&pics=https://StevenJokes.github.io//images/avatar.png?v=1587138090280&summary=&lt;p&gt;👏  欢迎来的我的 &lt;strong&gt;Gridea&lt;/strong&gt; 的博客&lt;br&gt;
-✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
-"><i class="fa fa-qq"></i></a>
-                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://StevenJokes.github.io/post/hello-gridea/&sharesource=weibo&title=Hello，everybody！ + " - " + &lt;p&gt;👏  欢迎来的我的 &lt;strong&gt;Gridea&lt;/strong&gt; 的博客&lt;br&gt;
-✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
-&pic="https://StevenJokes.github.io//images/avatar.png?v=1587138090280 "><i class="fa fa-weibo "></i></a>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/&sharesource=qzone&title=算法图解 7.3 换钢琴 代码实现&pics=https://StevenJokes.github.io//images/avatar.png?v=1587138090280&summary="><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/&sharesource=weibo&title=算法图解 7.3 换钢琴 代码实现 + " - " + &pic="https://StevenJokes.github.io//images/avatar.png?v=1587138090280 "><i class="fa fa-weibo "></i></a>
 
                                                                     </span>
                                                                     
@@ -275,12 +323,6 @@
                                                                                     <span>&#x6807;&#x7B7E;:</span>
                                                                                     <span class="tag ">
                         
-                        
-                        <a href="https://StevenJokes.github.io/tag/8ZwES1i21/">#
-                    Gridea
-                        </a>
-                        
-                            
                                 </span>
                                                                                 </div>
                                                                                 <div>
@@ -296,6 +338,10 @@
                                                                                 <section class="post-nav">
                                                                                     
                                                                                             
+                                                                                                <a class="next" rel="next" href="https://StevenJokes.github.io/post/wo-de-qiong-bi-pei-zhi/">
+                                                                                                    我的穷逼配置
+                                                                                                </a>
+                                                                                                
                                                                                 </section>
                     </article>
                 </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-03-20T08:05:39.866Z</updated>
+    <updated>2020-04-17T15:41:37.367Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -10,6 +10,101 @@
     <logo>https://StevenJokes.github.io/images/avatar.png</logo>
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[算法图解 7.3 换钢琴 代码实现]]></title>
+        <id>https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/</id>
+        <link href="https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/">
+        </link>
+        <updated>2020-04-17T15:39:08.000Z</updated>
+        <content type="html"><![CDATA[<p>#!/usr/bin/env python</p>
+<h1 id="codingutf-8">coding=utf-8</h1>
+<p>'''<br>
+@version:<br>
+@Author: steven<br>
+@Date: 2020-04-17 21:30:12<br>
+@LastEditors: steven<br>
+@LastEditTime: 2020-04-17 23:38:12<br>
+@Description: 算法图解 7.3 换钢琴 代码实现<br>
+'''</p>
+<h1 id="添加节点和邻居">添加节点和邻居</h1>
+<p>graph = {}</p>
+<p>graph[&quot;muscbk&quot;] = {} # 起点为musicbook,简称muscbk<br>
+graph[&quot;muscbk&quot;][&quot;record&quot;] = 5<br>
+graph[&quot;muscbk&quot;][&quot;poster&quot;] = 0</p>
+<p>graph[&quot;record&quot;] = {}<br>
+graph[&quot;record&quot;][&quot;guitar&quot;] = 15<br>
+graph[&quot;record&quot;][&quot;grum&quot;] = 20</p>
+<p>graph[&quot;poster&quot;] = {}<br>
+graph[&quot;poster&quot;][&quot;guitar&quot;] = 30<br>
+graph[&quot;poster&quot;][&quot;grum&quot;] = 35</p>
+<p>graph[&quot;guitar&quot;] = {}<br>
+graph[&quot;guitar&quot;][&quot;piano&quot;] = 20</p>
+<p>graph[&quot;grum&quot;] = {}<br>
+graph[&quot;grum&quot;][&quot;piano&quot;] = 10</p>
+<p>graph[&quot;piano&quot;] = {}  # 终点piano没有邻居</p>
+<h1 id="存储每个节点开销的散列表">存储每个节点开销的散列表</h1>
+<p>infinity = float(&quot;inf&quot;)</p>
+<p>costs = {}<br>
+costs[&quot;record&quot;] = 5<br>
+costs[&quot;poster&quot;] = 0<br>
+costs[&quot;guitar&quot;] = infinity<br>
+costs[&quot;grum&quot;] = infinity<br>
+costs[&quot;piano&quot;] = infinity</p>
+<h1 id="存储父节点的散列表">存储父节点的散列表</h1>
+<p>parents = {}<br>
+parents[&quot;record&quot;] = &quot;muscbk&quot;<br>
+parents[&quot;poster&quot;] = &quot;muscbk&quot;<br>
+parents[&quot;guitar&quot;] = None<br>
+parents[&quot;drum&quot;] = None<br>
+parents[&quot;piano&quot;] = None</p>
+<p>processed = []  # 一个数组，用于记录处理过的节点。因为对于同一个节点，不用处理多次。</p>
+<p>def find_lowest_cost_node(costs):<br>
+# (2).to initial lowest_cost,removes other guessworks.<br>
+lowest_cost = float(&quot;inf&quot;)<br>
+# to initial cost node.<br>
+lowest_cost_node = None<br>
+# 遍历所有的节点<br>
+for node in costs:<br>
+cost = costs[node]<br>
+# 如果当前节点的开销更低且未处理过<br>
+if cost &lt; lowest_cost and node not in processed:<br>
+# 就将其视为开销最低的节点<br>
+lowest_cost = cost<br>
+lowest_cost_node = node<br>
+return lowest_cost_node</p>
+<h1 id="在未处理的节点中找出开销最小的节点">在未处理的节点中找出开销最小的节点</h1>
+<p>node = find_lowest_cost_node(costs)</p>
+<h1 id="这个while循环在所有节点都被处理过后结束">这个while循环在所有节点都被处理过后结束</h1>
+<p>while node is not None:<br>
+cost = costs[node]<br>
+# 遍历当前节点的所有邻居<br>
+neighbors = graph[node]<br>
+for n in neighbors.keys():<br>
+new_cost = cost + neighbors[n]<br>
+# 如果经当前节点前往该邻居更近<br>
+if costs[n] &gt; new_cost:<br>
+# 就更新该邻居的开销<br>
+costs[n] = new_cost<br>
+# 同时将该邻居的父节点设置为当前节点<br>
+parents[n] = node<br>
+# 将当前节点标记为处理过<br>
+processed.append(node)<br>
+# 找出接下来要处理的节点，并做循环<br>
+node = find_lowest_cost_node(costs)</p>
+<p>if <strong>name</strong> == '<strong>main</strong>':<br>
+print(&quot;Cost from the start to each node:&quot;)<br>
+print(costs)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的穷逼配置]]></title>
+        <id>https://StevenJokes.github.io/post/wo-de-qiong-bi-pei-zhi/</id>
+        <link href="https://StevenJokes.github.io/post/wo-de-qiong-bi-pei-zhi/">
+        </link>
+        <updated>2020-03-20T14:02:33.000Z</updated>
+        <content type="html"><![CDATA[<p>ha,</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello，everybody！]]></title>
         <id>https://StevenJokes.github.io/post/helloeverybody/</id>
