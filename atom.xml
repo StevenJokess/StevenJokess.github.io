@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-04-20T08:51:13.620Z</updated>
+    <updated>2020-05-05T12:19:48.225Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://StevenJokes.github.io/images/avatar.png</logo>
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[PyTorch cpu VScode]]></title>
+        <id>https://StevenJokes.github.io/post/pytorch-cpu-vscode/</id>
+        <link href="https://StevenJokes.github.io/post/pytorch-cpu-vscode/">
+        </link>
+        <updated>2020-05-05T12:06:44.000Z</updated>
+        <content type="html"><![CDATA[<p>##1.创建虚拟环境<br>
+conda create -n pytorch #创建个叫pytorch的虚拟环境<br>
+source activate pytorch #激活他</p>
+<p>##2.官网<br>
+因为没GPU，所以选无cuda版<br>
+https://pytorch.org/get-started/locally/<br>
+<img src="https://StevenJokes.github.io//post-images/1588680447965.jpg" alt="无cuda" loading="lazy"></p>
+<p>这里conda使用的是清华源所以把-c去掉<br>
+conda install pytorch torchvision cpuonly</p>
+<p>##3.VScode设置<br>
+conda install ipykernel<br>
+打开settings（CTRL+ALT+p 搜settings)设置为<br>
+&quot;python.pythonPath&quot;: &quot;C:\ProgramData\Anaconda3\envs\pytorch\python.exe&quot;,<br>
+<img src="https://StevenJokes.github.io//post-images/1588681064137.jpg" alt="" loading="lazy"><br>
+且在IDE中选择pytorch<br>
+<img src="https://StevenJokes.github.io//post-images/1588680694919.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[实习论文]]></title>
         <id>https://StevenJokes.github.io/post/shi-xi-lun-wen/</id>
