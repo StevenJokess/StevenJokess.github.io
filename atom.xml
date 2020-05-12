@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-05-05T12:22:15.887Z</updated>
+    <updated>2020-05-12T03:47:32.881Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -10,6 +10,45 @@
     <logo>https://StevenJokes.github.io/images/avatar.png</logo>
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[markdown测试]]></title>
+        <id>https://StevenJokes.github.io/post/markdown-ce-shi/</id>
+        <link href="https://StevenJokes.github.io/post/markdown-ce-shi/">
+        </link>
+        <updated>2020-05-12T03:46:32.000Z</updated>
+        <content type="html"><![CDATA[<!--
+ * @version:
+ * @Author: steven
+ * @Date: 2020-05-12 10:19:53
+ * @LastEditors: steven
+ * @LastEditTime: 2020-05-12 11:46:08
+ * @Description:https://www.bilibili.com/video/BV1sz411z7qd
+ -->
+<h1 id="markdown测试">markdown测试</h1>
+<h2 id="概述">概述</h2>
+<p>轻量、后可转换为html，</p>
+<h3 id="优点">优点</h3>
+<ul>
+<li>语法简单</li>
+<li>注重内容</li>
+</ul>
+<h3 id="缺点">缺点</h3>
+<ol>
+<li>图片</li>
+<li>语法兼容</li>
+</ol>
+<h2 id="代码块">代码块</h2>
+<pre><code class="language-json">{
+    &quot;name&quot;:&quot;me&quot;,
+    &quot;age&quot;:&quot;21&quot;
+}
+</code></pre>
+<p>反引号 <code>console.log(&quot;hello,world&quot;)</code></p>
+<h2 id="链接">链接</h2>
+<p>欢迎大家访问<a href="https://blog.dltech.xyz/" title="AI\ML\DL\Python\Finance\C一路的学习失败者小站">深度嗑剂</a></p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/wangzhengya/cheatsheet/master/image/markdown.png" alt="CheatSheet" title="大佬wangzhengya的CheatSheet" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PyTorch cpu VScode]]></title>
         <id>https://StevenJokes.github.io/post/pytorch-cpu-vscode/</id>
