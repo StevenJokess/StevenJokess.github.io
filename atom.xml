@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-05-29T17:38:29.316Z</updated>
+    <updated>2020-05-29T17:54:04.858Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -11,12 +11,13 @@
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
     <entry>
-        <title type="html"><![CDATA[2-10]]></title>
+        <title type="html"><![CDATA[2-10、2-11]]></title>
         <id>https://StevenJokes.github.io/post/2-10/</id>
         <link href="https://StevenJokes.github.io/post/2-10/">
         </link>
         <updated>2020-05-29T17:37:47.000Z</updated>
-        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2-10.py</p>
+        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2-10.py<br>
+https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2-11.py</p>
 ]]></content>
     </entry>
     <entry>
