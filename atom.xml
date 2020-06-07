@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-06-07T16:00:57.401Z</updated>
+    <updated>2020-06-07T16:01:33.012Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -18,9 +18,12 @@
         <updated>2020-06-07T15:42:49.000Z</updated>
         <content type="html"><![CDATA[<h1 id="342-实践演练解决找零问题">3.4.2 实践演练——解决“找零”问题</h1>
 <h2 id="为了说明贪心算法的基本用法接下来将通过一个具体实例的实现过程详细讲解解决找零问题的方法">为了说明贪心算法的基本用法，接下来将通过一个具体实例的实现过程，详细讲解解决“找零”问题的方法。</h2>
-<p>1.问题描述假设只有1分、2分、5分、1角、2角、5角、1元面值的硬币。在超市结账时，如果需要找零钱，收银员希望将最少的硬币数找给顾客。那么，给定需要找的零钱数目，如何求得最少的硬币数呢？<br>
-2.算法分析在找零钱时可以有多种方案，例如补零钱0.5元时可有以下方案。（1）1枚0.5元硬币。（2）2枚0.2元硬币、1枚0.1元硬币。（3）5枚0.1元硬币。……<br>
-3.具体实现编写实例文件ling.py，具体实现代码如下所示。<br>
+<p>1.问题描述假设只有1分、2分、5分、1角、2角、5角、1元面值的硬币。在超市结账时，如果需要找零钱，收银员希望将最少的硬币数找给顾客。那么，给定需要找的零钱数目，如何求得最少的硬币数呢？</p>
+<p>2.算法分析在找零钱时可以有多种方案，例如补零钱0.5元时可有以下方案。<br>
+（1）1枚0.5元硬币。<br>
+（2）2枚0.2元硬币、1枚0.1元硬币。<br>
+（3）5枚0.1元硬币。……</p>
+<p>3.具体实现编写实例文件ling.py，具体实现代码如下所示。<br>
 https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/ling.py#L20</p>
 ]]></content>
     </entry>
