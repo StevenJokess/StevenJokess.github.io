@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-06-07T16:02:43.053Z</updated>
+    <updated>2020-06-08T03:04:01.079Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://StevenJokes.github.io/images/avatar.png</logo>
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[加油]]></title>
+        <id>https://StevenJokes.github.io/post/jia-you/</id>
+        <link href="https://StevenJokes.github.io/post/jia-you/">
+        </link>
+        <updated>2020-06-08T03:03:36.000Z</updated>
+        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/jiayou.py</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[零钱]]></title>
         <id>https://StevenJokes.github.io/post/ling-qian/</id>
