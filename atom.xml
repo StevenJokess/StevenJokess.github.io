@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-06-29T09:41:35.486Z</updated>
+    <updated>2020-06-29T14:20:57.396Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://StevenJokes.github.io/images/avatar.png</logo>
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[ CAE Stamping Simulation]]></title>
+        <id>https://StevenJokes.github.io/post/cae-stamping-simulation/</id>
+        <link href="https://StevenJokes.github.io/post/cae-stamping-simulation/">
+        </link>
+        <updated>2020-06-29T14:12:23.000Z</updated>
+        <content type="html"><![CDATA[<p>研究了下。。。啊 太菜了</p>
+<h2 id="人httpsi-itemjdcom45305383903html">人：https://i-item.jd.com/45305383903.html&gt;</h2>
+<h2 id="书">书：</h2>
+<ul>
+<li>冲压CAE技术应用（附光盘）：<a href="https://item.jd.com/11886860.html">https://item.jd.com/11886860.html</a></li>
+<li>金属塑性成形CAE应用：DYNAFORM：<a href="https://item.jd.com/11605475.html">https://item.jd.com/11605475.html</a></li>
+<li>板料成形CAE设计及应用：基于Dynaform（英文） [CAE Design and Application of Sheet Metal Forming：Based on Dynaform]：<a href="https://item.jd.com/12628936.html">https://item.jd.com/12628936.html</a></li>
+</ul>
+<p>https://1drv.ms/w/s!AmvfcA2CS8LNgskmXQJEE8PgHvVMrA</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Leetcode_Container With Most Water]]></title>
         <id>https://StevenJokes.github.io/post/leetcode_container-with-most-water/</id>
@@ -181,15 +198,6 @@ conda install pytorch torchvision cpuonly</p>
         <updated>2020-04-17T15:39:08.000Z</updated>
         <content type="html"><![CDATA[<p><img src="https://StevenJokes.github.io//post-images/1587141661513.jpg" alt="换钢琴的有向图" loading="lazy"><br>
 https://github.com/StevenJokes/algs_py/blob/master/musicbk_piano.py</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我的穷逼配置]]></title>
-        <id>https://StevenJokes.github.io/post/wo-de-qiong-bi-pei-zhi/</id>
-        <link href="https://StevenJokes.github.io/post/wo-de-qiong-bi-pei-zhi/">
-        </link>
-        <updated>2020-03-20T14:02:33.000Z</updated>
-        <content type="html"><![CDATA[<p>ha,</p>
 ]]></content>
     </entry>
 </feed>
