@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://StevenJokes.github.io/</id>
     <title>Steven Jokes</title>
-    <updated>2020-06-29T14:20:57.396Z</updated>
+    <updated>2020-07-01T12:10:27.805Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://StevenJokes.github.io/"/>
     <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
@@ -10,6 +10,132 @@
     <logo>https://StevenJokes.github.io/images/avatar.png</logo>
     <icon>https://StevenJokes.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[C++ 配置]]></title>
+        <id>https://StevenJokes.github.io/post/c-pei-zhi/</id>
+        <link href="https://StevenJokes.github.io/post/c-pei-zhi/">
+        </link>
+        <updated>2020-07-01T12:07:42.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>{
+    &quot;configurations&quot;: [
+        {
+            &quot;name&quot;: &quot;Win32&quot;,
+            &quot;includePath&quot;: [
+                &quot;${workspaceFolder}/**&quot;
+            ],
+            &quot;defines&quot;: [
+                &quot;_DEBUG&quot;,
+                &quot;UNICODE&quot;,
+                &quot;_UNICODE&quot;
+            ],
+            &quot;intelliSenseMode&quot;: &quot;gcc-x64&quot;,
+            &quot;cStandard&quot;: &quot;c11&quot;,
+            &quot;cppStandard&quot;: &quot;c++17&quot;,
+            &quot;compilerPath&quot;: &quot;C:/mingw64/bin/g++.exe&quot;
+        }
+    ],
+    &quot;version&quot;: 4
+}
+</code></pre>
+<hr>
+<pre><code>{//task.json
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	// https://code.visualstudio.com/docs/editor/tasks
+	&quot;version&quot;: &quot;2.0.0&quot;,
+	&quot;tasks&quot;: [
+		{
+			&quot;type&quot;: &quot;shell&quot;,
+			&quot;label&quot;: &quot;C/C++: g++.exe build active file&quot;,
+			&quot;command&quot;: &quot;g++.exe&quot;,
+			&quot;args&quot;: [
+				&quot;${file}&quot;,
+				&quot;-o&quot;,
+				&quot;${fileDirname}/${fileBasenameNoExtension}.exe&quot;,
+				&quot;-g&quot;,
+				&quot;-Wall&quot;,
+				&quot;-static-libgcc&quot;,
+				&quot;-fexec-charset=GBK&quot;
+			],
+			&quot;options&quot;: {
+				&quot;cwd&quot;: &quot;${workspaceFolder}&quot;
+			},
+			&quot;group&quot;: &quot;build&quot;,
+			&quot;presentation&quot;: {
+				&quot;echo&quot;: true,
+				&quot;reveal&quot;: &quot;always&quot;,
+				&quot;focus&quot;: false,
+				&quot;panel&quot;: &quot;shared&quot;
+			},
+			&quot;problemMatcher&quot;: []
+		}
+	],
+}
+</code></pre>
+<hr>
+<pre><code>{//launch.json
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [{
+            &quot;name&quot;: &quot;(gdb) Launch&quot;,// 配置名称，将会在启动配置的下拉菜单中显示
+            &quot;preLaunchTask&quot;: &quot;C/C++: g++.exe build active file&quot;,//调试前执行的任务，就是之前配置的tasks.json中的label字段
+            &quot;type&quot;: &quot;cppdbg&quot;,//配置类型，cppdbg对应cpptools提供的调试功能；可以认为此处只能是cppdbg
+            &quot;request&quot;: &quot;launch&quot;,//请求配置类型，可以为launch（启动）或attach（附加）
+            &quot;program&quot;: &quot;${fileDirname}\\${fileBasenameNoExtension}.exe&quot;,//调试程序的路径名称
+            &quot;args&quot;: [],//程序调试时传递给程序的命令行参数，一般设为空即可
+            &quot;stopAtEntry&quot;: false,// 设为true时程序将暂停在程序入口处，相当于在main上打断点
+            &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,// 调试程序时的工作目录，此为工作区文件夹；改成${fileDirname}可变为文件所在目录
+            &quot;environment&quot;: [],// 环境变量
+            &quot;externalConsole&quot;: true,//true显示外置的控制台窗口，false显示内置终端
+            &quot;internalConsoleOptions&quot;: &quot;neverOpen&quot;, // 如果不设为neverOpen，调试时会跳到“调试控制台”选项卡，你应该不需要对gdb手动输命令吧？
+            &quot;MIMode&quot;: &quot;gdb&quot;,
+            &quot;miDebuggerPath&quot;: &quot;gdb.exe&quot;,//调试器路径，Windows下后缀不能省略，Linux下则不要:https://github.com/microsoft/vscode-cpptools/issues/2778
+            &quot;setupCommands&quot;: [
+                {// 模板自带，好像可以更好地显示STL容器的内容，具体作用自行Google
+                    &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,
+                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
+                    &quot;ignoreFailures&quot;: true
+                }
+            ]
+        }]
+}
+</code></pre>
+<hr>
+<p>sftp.json</p>
+<pre><code>{
+    &quot;name&quot;: &quot;tfae.dtx&quot;,
+    &quot;protocol&quot;: &quot;sftp&quot;,
+    &quot;host&quot;: &quot;10.xxxxxxxx.22&quot;,
+    &quot;port&quot;: 36000,
+    &quot;username&quot;: &quot;xxxxxxxx&quot;,
+    &quot;password&quot;: &quot;xxxxxx&quot;,
+    &quot;uploadOnSave&quot;: true,
+    &quot;ignore&quot;: [
+        &quot;\\.VSCode&quot;,
+        &quot;\\.git&quot;,
+        &quot;\\.DS_Store&quot;,
+        &quot;\\.svn&quot;,
+        &quot;\\.history&quot;,
+        &quot;\\.IAB&quot;,
+        &quot;\\.IAD&quot;,
+        &quot;\\.IMB&quot;,
+        &quot;\\.IMD&quot;,
+        &quot;\\.PFI&quot;,
+        &quot;\\.PO&quot;,
+        &quot;\\.PR&quot;,
+        &quot;\\.PRI&quot;,
+        &quot;\\.PS&quot;,
+        &quot;\\.WK3&quot;
+    ],
+    &quot;remotePath&quot;: &quot;/root/home/denniszhu/tarsCpp&quot;
+}
+</code></pre>
+<hr>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ CAE Stamping Simulation]]></title>
         <id>https://StevenJokes.github.io/post/cae-stamping-simulation/</id>
@@ -188,16 +314,6 @@ conda install pytorch torchvision cpuonly</p>
 <h2 id="5感悟体会">5.感悟体会</h2>
 <p>疫情在家这段时间里，我更加体会到互联网等一系列技术带来的应用便捷，医生们通过京东app进行科普宣传、老师们通过钉钉app进行实时线上授课，百姓们通过网上的爱奇艺、bilibili等流媒体进行视频娱乐，演员们通过在线视频技术进行直播， 科学家们利用AI来实现摄像检测冠状病毒（COVID-19）。正是这一切，使得大部分人能快乐地呆在家中抗击疫情，同时又能通过报告了解疫情实时的情况，保证了经济平稳有效地进行。<br>
 同时，我也将不断深化对前后端、算法、网络、AI的学习，以自动化、现代化、智能化的手段以其实现金融行业的更加信息化、公开化、透明化，以减少信息不对称、提高人们的信任、加快投融资的资金流动、提升金融业务的效率、降低经营成本、实现创新发展！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[算法图解 7.3 换钢琴 代码实现]]></title>
-        <id>https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/</id>
-        <link href="https://StevenJokes.github.io/post/suan-fa-tu-jie-73-huan-gang-qin-dai-ma-shi-xian/">
-        </link>
-        <updated>2020-04-17T15:39:08.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://StevenJokes.github.io//post-images/1587141661513.jpg" alt="换钢琴的有向图" loading="lazy"><br>
-https://github.com/StevenJokes/algs_py/blob/master/musicbk_piano.py</p>
 ]]></content>
     </entry>
 </feed>
