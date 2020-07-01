@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://StevenJokes.github.io/</id>
+    <id>http://localhost:4000</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-01T16:05:58.024Z</updated>
+    <updated>2020-07-01T16:12:37.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://StevenJokes.github.io/"/>
-    <link rel="self" href="https://StevenJokes.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>如果你想变强，那你最好知道自己有多弱！</subtitle>
-    <logo>https://StevenJokes.github.io/images/avatar.png</logo>
-    <icon>https://StevenJokes.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
     <entry>
         <title type="html"><![CDATA[good-books]]></title>
-        <id>https://StevenJokes.github.io/post/good-books/</id>
-        <link href="https://StevenJokes.github.io/post/good-books/">
+        <id>http://localhost:4000/post/good-books/</id>
+        <link href="http://localhost:4000/post/good-books/">
         </link>
         <updated>2020-07-01T14:56:10.000Z</updated>
         <content type="html"><![CDATA[<p>推荐些自己读过的好书。 微信读书： 书单<br>
@@ -23,11 +23,11 @@ Sybier的书单「2020年百书6.1完结！」 https://weread.qq.com/misc/bookli
     </entry>
     <entry>
         <title type="html"><![CDATA[Powershell配置 和 Terminal配置]]></title>
-        <id>https://StevenJokes.github.io/post/powershell-pei-zhi/</id>
-        <link href="https://StevenJokes.github.io/post/powershell-pei-zhi/">
+        <id>http://localhost:4000/post/powershell-pei-zhi/</id>
+        <link href="http://localhost:4000/post/powershell-pei-zhi/">
         </link>
         <updated>2020-07-01T13:25:40.000Z</updated>
-        <content type="html"><![CDATA[<p>效果图：<img src="https://StevenJokes.github.io//post-images/1593611155593.png" alt="效果图" loading="lazy"></p>
+        <content type="html"><![CDATA[<p>效果图：<img src="http://localhost:4000/post-images/1593611155593.png" alt="效果图" loading="lazy"></p>
 <h1 id="powershell">Powershell</h1>
 <p>参考了：https://zhuanlan.zhihu.com/p/144610989<br>
 因为PowerShell默认禁止运行脚本，需要首先开启权限，管理员模式运行PowerShell<br>
@@ -166,8 +166,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[C++ 配置]]></title>
-        <id>https://StevenJokes.github.io/post/c-pei-zhi/</id>
-        <link href="https://StevenJokes.github.io/post/c-pei-zhi/">
+        <id>http://localhost:4000/post/c-pei-zhi/</id>
+        <link href="http://localhost:4000/post/c-pei-zhi/">
         </link>
         <updated>2020-07-01T12:07:42.000Z</updated>
         <content type="html"><![CDATA[<pre><code class="language-json">{
@@ -295,8 +295,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[ CAE Stamping Simulation]]></title>
-        <id>https://StevenJokes.github.io/post/cae-stamping-simulation/</id>
-        <link href="https://StevenJokes.github.io/post/cae-stamping-simulation/">
+        <id>http://localhost:4000/post/cae-stamping-simulation/</id>
+        <link href="http://localhost:4000/post/cae-stamping-simulation/">
         </link>
         <updated>2020-06-29T14:12:23.000Z</updated>
         <content type="html"><![CDATA[<p>研究了下。。。啊 太菜了</p>
@@ -312,8 +312,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[Leetcode_Container With Most Water]]></title>
-        <id>https://StevenJokes.github.io/post/leetcode_container-with-most-water/</id>
-        <link href="https://StevenJokes.github.io/post/leetcode_container-with-most-water/">
+        <id>http://localhost:4000/post/leetcode_container-with-most-water/</id>
+        <link href="http://localhost:4000/post/leetcode_container-with-most-water/">
         </link>
         <updated>2020-06-27T18:12:17.000Z</updated>
         <content type="html"><![CDATA[<p>https://leetcode.com/submissions/detail/359042687/</p>
@@ -321,8 +321,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[字符串]]></title>
-        <id>https://StevenJokes.github.io/post/zi-fu-chuan/</id>
-        <link href="https://StevenJokes.github.io/post/zi-fu-chuan/">
+        <id>http://localhost:4000/post/zi-fu-chuan/</id>
+        <link href="http://localhost:4000/post/zi-fu-chuan/">
         </link>
         <updated>2020-06-10T02:09:53.000Z</updated>
         <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC4%E7%AB%A0/zifuchuan.py</p>
@@ -330,8 +330,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[加油]]></title>
-        <id>https://StevenJokes.github.io/post/jia-you/</id>
-        <link href="https://StevenJokes.github.io/post/jia-you/">
+        <id>http://localhost:4000/post/jia-you/</id>
+        <link href="http://localhost:4000/post/jia-you/">
         </link>
         <updated>2020-06-08T03:03:36.000Z</updated>
         <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/jiayou.py</p>
@@ -339,8 +339,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[零钱]]></title>
-        <id>https://StevenJokes.github.io/post/ling-qian/</id>
-        <link href="https://StevenJokes.github.io/post/ling-qian/">
+        <id>http://localhost:4000/post/ling-qian/</id>
+        <link href="http://localhost:4000/post/ling-qian/">
         </link>
         <updated>2020-06-07T15:42:49.000Z</updated>
         <content type="html"><![CDATA[<h1 id="342-实践演练解决找零问题">3.4.2 实践演练——解决“找零”问题</h1>
@@ -358,8 +358,8 @@ https://www.chuchur.com/article/windows-terminal-beautify
     </entry>
     <entry>
         <title type="html"><![CDATA[2-10、2-11]]></title>
-        <id>https://StevenJokes.github.io/post/2-10/</id>
-        <link href="https://StevenJokes.github.io/post/2-10/">
+        <id>http://localhost:4000/post/2-10/</id>
+        <link href="http://localhost:4000/post/2-10/">
         </link>
         <updated>2020-05-29T17:37:47.000Z</updated>
         <content type="html"><![CDATA[<p>https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2-10.py<br>
@@ -368,8 +368,8 @@ https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%
     </entry>
     <entry>
         <title type="html"><![CDATA[markdown测试]]></title>
-        <id>https://StevenJokes.github.io/post/markdown-ce-shi/</id>
-        <link href="https://StevenJokes.github.io/post/markdown-ce-shi/">
+        <id>http://localhost:4000/post/markdown-ce-shi/</id>
+        <link href="http://localhost:4000/post/markdown-ce-shi/">
         </link>
         <updated>2020-05-12T03:46:32.000Z</updated>
         <content type="html"><![CDATA[<!--
