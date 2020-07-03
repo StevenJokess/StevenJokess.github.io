@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-01T19:36:34.575Z</updated>
+    <updated>2020-07-03T07:07:12.920Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://blog.dltech.xyz/images/avatar.png</logo>
     <icon>https://blog.dltech.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[简历]]></title>
+        <id>https://blog.dltech.xyz/post/jian-li/</id>
+        <link href="https://blog.dltech.xyz/post/jian-li/">
+        </link>
+        <updated>2020-07-03T07:06:50.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://blog.dltech.xyz/post-images/1593760016240.png" alt="简历" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea的正确配置]]></title>
         <id>https://blog.dltech.xyz/post/gridea-de-zheng-que-pei-zhi/</id>
@@ -364,16 +373,6 @@ https://www.chuchur.com/article/windows-terminal-beautify
 （3）5枚0.1元硬币。……</p>
 <h3 id="3具体实现编写实例文件lingpy具体实现代码如下所示">3.具体实现编写实例文件ling.py，具体实现代码如下所示。</h3>
 <p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/ling.py#L20</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2-10、2-11]]></title>
-        <id>https://blog.dltech.xyz/post/2-10/</id>
-        <link href="https://blog.dltech.xyz/post/2-10/">
-        </link>
-        <updated>2020-05-29T17:37:47.000Z</updated>
-        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2-10.py<br>
-https://github.com/StevenJokes/pythonAlgorithm/blob/master/code/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2-11.py</p>
 ]]></content>
     </entry>
 </feed>
