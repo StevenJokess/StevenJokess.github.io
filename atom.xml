@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-04T06:41:33.925Z</updated>
+    <updated>2020-07-05T13:19:01.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://blog.dltech.xyz/images/avatar.png</logo>
     <icon>https://blog.dltech.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[开发期待中]]></title>
+        <id>https://blog.dltech.xyz/post/kai-fa-qi-dai-zhong/</id>
+        <link href="https://blog.dltech.xyz/post/kai-fa-qi-dai-zhong/">
+        </link>
+        <updated>2020-07-05T13:13:51.000Z</updated>
+        <content type="html"><![CDATA[<p>Windows Terminal + WSL 2+ VS Code （online: CodeSpaces) + Stack Overflow + O'reilly + GitHub + winget</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[简历]]></title>
         <id>https://blog.dltech.xyz/post/jian-li/</id>
@@ -355,25 +364,6 @@ https://www.chuchur.com/article/windows-terminal-beautify
         </link>
         <updated>2020-06-08T03:03:36.000Z</updated>
         <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/jiayou.py</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[零钱]]></title>
-        <id>https://blog.dltech.xyz/post/ling-qian/</id>
-        <link href="https://blog.dltech.xyz/post/ling-qian/">
-        </link>
-        <updated>2020-06-07T15:42:49.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="342-实践演练解决找零问题">3.4.2 实践演练——解决“找零”问题</h1>
-<h2 id="为了说明贪心算法的基本用法接下来将通过一个具体实例的实现过程详细讲解解决找零问题的方法">为了说明贪心算法的基本用法，接下来将通过一个具体实例的实现过程，详细讲解解决“找零”问题的方法。</h2>
-<h3 id="1问题描述">1.问题描述</h3>
-<p>假设只有1分、2分、5分、1角、2角、5角、1元面值的硬币。在超市结账时，如果需要找零钱，收银员希望将最少的硬币数找给顾客。那么，给定需要找的零钱数目，如何求得最少的硬币数呢？</p>
-<h3 id="2算法分析">2.算法分析</h3>
-<p>在找零钱时可以有多种方案，例如补零钱0.5元时可有以下方案。<br>
-（1）1枚0.5元硬币。<br>
-（2）2枚0.2元硬币、1枚0.1元硬币。<br>
-（3）5枚0.1元硬币。……</p>
-<h3 id="3具体实现编写实例文件lingpy具体实现代码如下所示">3.具体实现编写实例文件ling.py，具体实现代码如下所示。</h3>
-<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/ling.py#L20</p>
 ]]></content>
     </entry>
 </feed>
