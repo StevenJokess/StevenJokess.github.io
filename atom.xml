@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-08T05:00:47.683Z</updated>
+    <updated>2020-07-08T09:06:02.826Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://blog.dltech.xyz/images/avatar.png</logo>
     <icon>https://blog.dltech.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[OneNote hosts]]></title>
+        <id>https://blog.dltech.xyz/post/onenote-hosts/</id>
+        <link href="https://blog.dltech.xyz/post/onenote-hosts/">
+        </link>
+        <updated>2020-07-08T09:05:18.000Z</updated>
+        <content type="html"><![CDATA[<p>C:\Windows\System32\drivers\etc\hosts</p>
+<pre><code># https://ping.chinaz.com/skyapi.onedrive.live.com
+13.107.42.13 onedrive.live.com
+199.59.148.140 skyapi.onedrive.live.com
+
+# https://www.boce.com/ping/skyapi.onedrive.live.com
+199.59.148.140 skyapi.onedrive.live.com
+203.208.39.99 skyapi.onedrive.live.com
+31.13.72.54 onedrive.live.com
+203.208.39.99 onedrive.live.com
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[开发期待中]]></title>
         <id>https://blog.dltech.xyz/post/kai-fa-qi-dai-zhong/</id>
@@ -356,15 +375,6 @@ https://www.chuchur.com/article/windows-terminal-beautify
         </link>
         <updated>2020-06-10T02:09:53.000Z</updated>
         <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC4%E7%AB%A0/zifuchuan.py</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[加油]]></title>
-        <id>https://blog.dltech.xyz/post/jia-you/</id>
-        <link href="https://blog.dltech.xyz/post/jia-you/">
-        </link>
-        <updated>2020-06-08T03:03:36.000Z</updated>
-        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/jiayou.py</p>
 ]]></content>
     </entry>
 </feed>
