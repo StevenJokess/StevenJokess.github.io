@@ -225,7 +225,7 @@
                                     
                                         <div class="thumbnail-shadow">
                                             <h1 class="post-title">
-                                                加油
+                                                Teach you PyTorch mobile for android by creating a demo app hand-by-hand
                                             </h1>
                                             <div class="post-info">
                                                 <span class="post-category"><i class="Card Card-novel"></i>
@@ -240,19 +240,141 @@
                                                         </span>&nbsp;•&nbsp;
 
                                                         <span class="post-readtime">阅读时间:
-                                            <a href="#">0.1分</a></span>
+                                            <a href="#">8.3分</a></span>
                                                         <span class="post-edit"></span></div>
                                         </div>
                                         <div class="post-relative">
                                             <img alt="Steven Jokes" src="https://blog.dltech.xyz/images/avatar.png?v=1594476125264" srcset="https://blog.dltech.xyz/images/avatar.png?v=1594476125264" class="avatar avatar-100 photo" width="100" height="100">
                                             <span class="post-type-author"><a href="https://blog.dltech.xyz" title="由Steven Jokes发布" rel="author">Steven Jokes<i class="Card Card-certify"></i></a></span>
-                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-06-08</span>
+                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-07-11</span>
                                         </div>
                         </header>
                         <div class="post-main post-type-main">
                             <div class="post-content">
                                 <div class="post-content-real">
-                                    <p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC3%E7%AB%A0/jiayou.py</p>
+                                    <p>There are some bugs in videos not shown!</p>
+<h1 id="teach-you-pytorch-mobile-for-android-create-a-demo-app-hand">Teach you PyTorch mobile for android create a demo app hand</h1>
+<h2 id="my-github-repo">My github repo:</h2>
+<h2 id="my-blog">My blog:</h2>
+<p>I'm a Chinese guy and a Win10 user! So if you can't understand my sentences, give me an issue and I will do my best to help you. Linux users can also get help from my article too.</p>
+<p>I'll share you all my research process. (It cost me two days and two nights..) And I will tell you <strong>how to have a demo app for android in English</strong>.</p>
+<p>I'm new to Android and PyTorch too. If you are learning or have mastered in them, you can telegram me and maybe we will become good friends. And I'm applying for a job now, please email me at llgg8679@qq.com if you like me.</p>
+<p>It's my first share about a newest tech. <em>Please please please!</em> give my repo a <strong>star</strong> and <strong>fork</strong> if you find it helpful.</p>
+<h2 id="what-we-need">What we need:</h2>
+<ol>
+<li>Anaconda(you could use miniconda to <code>conda install</code> too).</li>
+<li>Git (bet you guys all have it)for <code>git clone https://github.com/pytorch/android-demo-app</code></li>
+<li>Android Studio 3.5.1+ ，Android SDK and Android NDK (For win10 users, I suggest to use chocolaty to install, see the following &quot;Install android dev&quot;.) which are required from https://pytorch.org/mobile/android/.</li>
+<li>Watch again: https://www.youtube.com/watch?v=O_2KBhkIvnc by 0.1 speed.</li>
+</ol>
+<h2 id="create-pytorch-nightly-environment">Create pytorch-nightly environment</h2>
+<p>In your cmd, create pytorch-nightly environment called pytorch_n(It is necessary to use <code>pytorch.jit</code>)</p>
+<pre><code class="language-cmd">conda create -n pytorch_n 
+conda activate pytorch_n
+</code></pre>
+<p>I only have cpu (if you are rich, please help me to get my own GPU workstation.) You can find GPU pytorch-nightly version to install in https://pytorch.org/get-started/locally/.</p>
+<pre><code class="language-cmd">conda install pytorch torchvision cpuonly -c pytorch-nightly -y
+</code></pre>
+<h2 id="git-clone">Git clone</h2>
+<p>In your cmd,</p>
+<pre><code class="language-cmd">git clone https://github.com/pytorch/android-demo-app
+</code></pre>
+<h2 id="open-folder">Open folder</h2>
+<p>Then open your &quot;HelloWorldApp&quot; (It is necessary to use <code>pytorch.jit.save</code>, or you will get error.)  folder in android-domo-app by <code>cd</code> or clicking.</p>
+<p>Here, I used VScode to open &quot;HelloWorldApp&quot; folder.<br>
+(Thanks for &quot;you need to have the same module/file/dir heirarchy or else it will crash.&quot; in https://github.com/pytorch/pytorch/issues/31620)</p>
+<h2 id="save-my-model">Save my model</h2>
+<p>Open the trace_model.py, and save it as trace_model_me.py.</p>
+<p>I read https://pytorch.org/mobile/android/ and  https://pytorch.org/docs/master/generated/torch.jit.save.html#torch.jit.save.I use <code>m</code> to replace <code>traced_script_module</code>. I named my model as model_me.pt.</p>
+<pre><code class="language-python">import torch
+import torchvision
+
+model = torchvision.models.resnet18(pretrained=True)
+model.eval()
+example = torch.rand(1, 3, 224, 224)
+m = torch.jit.trace(model, example) #  
+m.save(&quot;app/src/main/assets/model_me.pt&quot;)
+</code></pre>
+<p>Must in &quot;HelloWorldApp&quot;!<img src="https://blog.dltech.xyz/post-images/1594475049132.png" alt="" loading="lazy"><br>
+We can see how many times I tried!(Cost me 6 hours. cry!)<br>
+<img src="https://blog.dltech.xyz/post-images/1594474096806.png" alt="tried" loading="lazy"></p>
+<p>If you are in android-demo-app,error wil get you crazy.<br>
+<img src="https://blog.dltech.xyz/post-images/1594474241776.png" alt="Error" loading="lazy"></p>
+<h2 id="install-android-dev">Install android dev</h2>
+<p><code>choco install android-sdk, android-ndk, androidstudio</code></p>
+<p>My version: android-sdk 26.1.1, android-ndk 21.4, androidstudio 4.0.0.16.</p>
+<p>Then open &quot;android Studio&quot;. I'm using proxy to get quicker network.</p>
+<p><img src="https://blog.dltech.xyz/post-images/1594475620751.png" alt="proxy" loading="lazy"><br>
+<img src="https://blog.dltech.xyz/post-images/1594475671153.png" alt="jre" loading="lazy"><br>
+<img src="https://blog.dltech.xyz/post-images/1594475715350.png" alt="components" loading="lazy"></p>
+<p>Here, I didn' install Virtual Device. We can install it when we need. I used it in my following step.</p>
+<h2 id="create-new-project">Create New Project</h2>
+<p><img src="https://blog.dltech.xyz/post-images/1594475886535.png" alt="empty activity" loading="lazy"><br>
+<img src="https://blog.dltech.xyz/post-images/1594475910656.png" alt="configure" loading="lazy"><br>
+<img src="https://blog.dltech.xyz/post-images/1594475946465.png" alt="enable" loading="lazy"></p>
+<h2 id="what-we-got">What we got:</h2>
+<figure data-type="image" tabindex="1"><img src="https://blog.dltech.xyz/post-images/1594476102427.png" alt="demo app" loading="lazy"></figure>
+<h2 id="for-more-资料收集not-so-related-about-the-app-so-itll-be-in-chinese">For more:  资料收集(not so related about the app, so it'll be in Chinese)：</h2>
+<p>搭个model server，远程call api就好了，目前javascript没有很好的植入，做的还行的就是tf javascript。Torchserve可用来host pt模型<br>
+torch mobile模式<br>
+来自 <a href="https://www.zhihu.com/question/393499221">https://www.zhihu.com/question/393499221</a></p>
+<p>However if you’re aiming for edge deployment or you want to squeeze as much raw performance as possible, your best bet right now is to use ONNX 32. You can export 5 your PyTorch model in ONNX format and then use another framework (like caffe2, MXNet, CNTK, etc.) to actually run the model, these other frameworks do support edge and/or have specialized deployment extensions (e.g. the MXNet model server 20 which can also serve ONNX models directly).<br>
+来自 <a href="https://discuss.pytorch.org/t/pytorch-models-for-production/18115">https://discuss.pytorch.org/t/pytorch-models-for-production/18115</a></p>
+<p>libtorch是深坑，还是onnx靠谱<br>
+graphpipe了解一下<br>
+PyTorch模型到Android<br>
+1.2，使用onnx-tensorflow 项目，再从tensorflow转；<br>
+不支持空洞卷积、prelu...放弃了。<br>
+1.3，使用MMdnn项目转化为IR，再从IR转换为tensorflow或者keras，再到tflite；<br>
+使用命令：<br>
+mmtoir -f pytorch -d gemfieldnet --inputShape 3,512,1024 -n model.pth<br>
+解决无望！放弃了。<br>
+2，Pytorch到NCNN<br>
+通过onnx转换，刚开始（2019年1月25日）ncnn不支持upsample，在合并了Gemfield的一些PR后，终于可以转换成功了。详细使用方法，请参考NCNN官方。<br>
+推荐方法是使用PytorchConverter github地址：https://github.com/starimeL/PytorchConverter<br>
+3，PyTorch到小米的MACE<br>
+通过onnx转换，不过目前（2019年1月25日）不支持卷积核的group参数，不支持upsample，放弃。<br>
+Pytorch的模型不能直接被MNN进行解析，所以我们这里需要选定一个媒介。参考之前专栏的一篇文章《整合mxnet和MNN的嵌入式部署流程》，这里也采用ONNX进行pytorch和MNN之间的桥梁。<br>
+方案一：利用腾讯开源的ncnn库(nihui大神牛皮！！)；但这个适合移动端部署，特别是针对andriod的极致优化。<br>
+编译ncnn的准备工作：g++, cmake，protobuf,opencv，<br>
+前两个不必说，很容易。其中安装protobuf和opencv都可以分别写一篇博客了。</p>
+<p>来自 <a href="https://www.zhihu.com/search?type=content&amp;q=pytorch%20%E9%83%A8%E7%BD%B2%20%E5%B0%8F%E7%A8%8B%E5%BA%8F">https://www.zhihu.com/search?type=content&amp;q=pytorch 部署 小程序</a></p>
+<pre><code>	Use compatible model saving &amp; loading method, e.g.
+	# Saving, notice the difference on DataParallel
+net_for_saving = net.module if use_nn_DataParallel else net
+torch.save(net_for_saving.state_dict(), path)
+	# Loading
+net.load_state_dict(torch.load(path, map_location=lambda storge, loc: storage))
+</code></pre>
+<p>来自 <a href="https://github.com/starimeL/PytorchConverter">https://github.com/starimeL/PytorchConverter</a></p>
+<p>Pytorch 模型部署到服务器有没有什么好的方案?<br>
+Lanking<br>
+​<br>
+AWS AI算法工程师<br>
+torchserve了解一下。也可以用DJL，如果你的服务器是java的。<br>
+DJL.ai​DJL.ai</p>
+<p>PyTorch项目移植到移动端目前有两种方案：</p>
+<ol>
+<li>把PyTorch模型转成专门的部署框架模型，比如NCNN、TVM之类的，可能需要经过ONNX中转。优点是：NCNN、TVM这种专门的部署框架下的模型推理速度比较快；缺点是：转换过程中可能会出现各种操作不支持，需要有解决这些问题的工程能力。</li>
+<li>使用PyTorch Mobile，即将PyTorch模型转成TorchScript模型，可以利用PyTorchMobile的java接口调用。这个方法的有点是：TorchScript支持控制流，所以不需要对项目代码做多大修改，就可以迁移到移动端；缺点是：速度拼不过专门的部署框架，如果模型比较大的话，转换之后可能会发现明显的速度下降。<br>
+发布于 03-08<br>
+来自 <a href="https://www.zhihu.com/search?type=content&amp;q=pytorch%20mobile">https://www.zhihu.com/search?type=content&amp;q=pytorch mobile</a></li>
+</ol>
+<p>TorchServe库同时支持Python和TorchScript模型；它可以同时运行一个模型的多个版本，甚至可以在模型存档中回滚到过去的版本。亚马逊工程师在一篇博文中表示，超过80%的使用PyTorch的云机器学习项目是在AWS上进行的。<br>
+来自 <a href="https://www.zhihu.com/search?type=content&amp;q=pytorch%20mobile">https://www.zhihu.com/search?type=content&amp;q=pytorch mobile</a></p>
+<p>在2019年10月举行的年度PyTorch开发者大会上，Facebook首次介绍了Google Cloud TPU支持和量化以及PyTorch Mobile。<br>
+来自 <a href="https://www.zhihu.com/search?type=content&amp;q=pytorch%20mobile">https://www.zhihu.com/search?type=content&amp;q=pytorch mobile</a></p>
+<p>另外10分感谢小伙伴的友情指导。（突然发现我司的框架编译难度已经很容易了.......233）<br>
+OAID/Tengine​github.com<br>
+Tencent/ncnn​github.com<br>
+Tencent/FeatherCNN​github.com<br>
+XiaoMi/mace​github.com<br>
+alibaba/MNN​github.com<br>
+已经提前git clone完毕Paddle-Lite的repo，配置好ANDROID_NDK路径（ncnn、mnn、mace、Tengine均能识别）<br>
+来自 <a href="https://www.zhihu.com/question/341980046">https://www.zhihu.com/question/341980046</a></p>
+<p>没有人敢用不维护的开源项目，即使你曾经速度最快，功能最强，技术最先进<br>
+没有人敢用可能不到一年便不维护的开源项目，即使你现在速度最快，功能最强，技术最先进<br>
+来自 <a href="https://www.zhihu.com/question/341980046">https://www.zhihu.com/question/341980046</a></p>
 
                                 </div>
                             </div>
@@ -270,8 +392,8 @@
                             <div class="post-copyright">
                                 作者:
                                 Steven Jokes<br>永久链接:
-                                    <a href="https://blog.dltech.xyz/post/jia-you/" title="加油">
-                                        https://blog.dltech.xyz/post/jia-you/
+                                    <a href="https://blog.dltech.xyz/post/pytorch-android/" title="Teach you PyTorch mobile for android by creating a demo app hand-by-hand">
+                                        https://blog.dltech.xyz/post/pytorch-android/
                                     </a><br> 协议: MIT License
                             </div>
                         </div>
@@ -294,17 +416,10 @@
                 </style>
                 <div class="lite-item nearby-article">
                     
-                        <div class="nearby-article-left" style="padding: 10px;">
-                            <a class="prev" rel="prev" href="https://blog.dltech.xyz/post/zi-fu-chuan/">
-                                <i class="fa fa-chevron-left"></i>
-                                字符串
-                            </a>
-                        </div>
-                        
                             
                                 <div class="nearby-article-right" style="padding: 10px;">
-                                    <a class="next" rel="next" href="https://blog.dltech.xyz/post/ling-qian/">
-                                        零钱<i class="fa fa-chevron-right"></i>
+                                    <a class="next" rel="next" href="https://blog.dltech.xyz/post/onenote-hosts/">
+                                        OneNote hosts<i class="fa fa-chevron-right"></i>
                                     </a>
                                 </div>
                                 
@@ -313,9 +428,9 @@
                 <span style="margin-right:15px">
     <i class="post-share"></i>
     <span>&#x5206;&#x4EAB;:</span>
-                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.dltech.xyz/post/jia-you/"><i class="fa fa-qrcode"></i></a>
-                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.dltech.xyz/post/jia-you/&sharesource=qzone&title=加油&pics=https://blog.dltech.xyz/images/avatar.png?v=1594476125264&summary="><i class="fa fa-qq"></i></a>
-                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.dltech.xyz/post/jia-you/&sharesource=weibo&title=加油 + " - " + &pic="https://blog.dltech.xyz/images/avatar.png?v=1594476125264"><i class="fa fa-weibo "></i></a>
+                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.dltech.xyz/post/pytorch-android/"><i class="fa fa-qrcode"></i></a>
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.dltech.xyz/post/pytorch-android/&sharesource=qzone&title=Teach you PyTorch mobile for android by creating a demo app hand-by-hand&pics=https://blog.dltech.xyz/images/avatar.png?v=1594476125264&summary="><i class="fa fa-qq"></i></a>
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.dltech.xyz/post/pytorch-android/&sharesource=weibo&title=Teach you PyTorch mobile for android by creating a demo app hand-by-hand + " - " + &pic="https://blog.dltech.xyz/images/avatar.png?v=1594476125264"><i class="fa fa-weibo "></i></a>
                 </span>
                 
                                             
