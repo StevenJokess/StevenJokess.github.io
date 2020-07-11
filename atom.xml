@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-11T14:26:46.843Z</updated>
+    <updated>2020-07-11T14:28:01.284Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -16,9 +16,11 @@
         <link href="https://blog.dltech.xyz/post/pytorch-android/">
         </link>
         <updated>2020-07-11T12:22:44.000Z</updated>
-        <content type="html"><![CDATA[<p>There are some ** bugs** in videos not shown!</p>
-<h2 id="my-github-repohttpsgithubcomstevenjokespytorch-andriod-greatdemo">My github repo:https://github.com/StevenJokes/pytorch-andriod-greatdemo</h2>
-<h2 id="my-bloghttpsblogdltechxyzpostpytorch-android">My blog:https://blog.dltech.xyz/post/pytorch-android/</h2>
+        <content type="html"><![CDATA[<h2 id="there-are-some-bugs-in-videos-not-shown">There are some ** bugs** in videos not shown!</h2>
+<h2 id="my-github-repo">My github repo:</h2>
+<p>https://github.com/StevenJokes/pytorch-andriod-greatdemo</p>
+<h2 id="my-blog">My blog:</h2>
+<p>https://blog.dltech.xyz/post/pytorch-android/</p>
 <p>I'm a Chinese guy and a Win10 user! So if you can't understand my sentences, give me an issue and I will do my best to help you. Linux users can also get help from my article too.</p>
 <p>I'll share you all my research process. (It cost me two days and two nights..) And I will tell you <strong>how to have a demo app for android in English</strong>.</p>
 <p>I'm new to Android and PyTorch too. If you are learning or have mastered in them, you can telegram me and maybe we will become good friends. And I'm applying for a job now, please email me at llgg8679@qq.com if you like me.</p>
