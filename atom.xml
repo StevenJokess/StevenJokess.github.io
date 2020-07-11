@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-11T01:26:09.146Z</updated>
+    <updated>2020-07-11T01:32:46.179Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://blog.dltech.xyz/images/avatar.png</logo>
     <icon>https://blog.dltech.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
-    <entry>
-        <title type="html"><![CDATA[clash]]></title>
-        <id>https://blog.dltech.xyz/post/clash/</id>
-        <link href="https://blog.dltech.xyz/post/clash/">
-        </link>
-        <updated>2020-07-11T01:25:08.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://blog.dltech.xyz/post-images/1594430713665.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[OneNote hosts]]></title>
         <id>https://blog.dltech.xyz/post/onenote-hosts/</id>
@@ -375,6 +366,15 @@ https://www.chuchur.com/article/windows-terminal-beautify
         </link>
         <updated>2020-06-27T18:12:17.000Z</updated>
         <content type="html"><![CDATA[<p>https://leetcode.com/submissions/detail/359042687/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[字符串]]></title>
+        <id>https://blog.dltech.xyz/post/zi-fu-chuan/</id>
+        <link href="https://blog.dltech.xyz/post/zi-fu-chuan/">
+        </link>
+        <updated>2020-06-10T02:09:53.000Z</updated>
+        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC4%E7%AB%A0/zifuchuan.py</p>
 ]]></content>
     </entry>
 </feed>
