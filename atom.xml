@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-15T07:04:23.710Z</updated>
+    <updated>2020-07-15T07:06:00.634Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -98,7 +98,7 @@ implementation'org.pytorch:pytorch_android_torchvision:1.5.0'
 <figure data-type="image" tabindex="2"><img src="https://blog.dltech.xyz/post-images/1594796500856.png" alt="new_dir" loading="lazy"></figure>
 <p>move<br>
 <img src="https://blog.dltech.xyz/post-images/1594796415709.png" alt="" loading="lazy"></p>
-<h1 id="part-three-todotired-again-if-you-need-the-tutorial-please-star-and-watch-the-repoill-update-if-50-stars-or-watch">Part Three: TODO:tired again. If you need the tutorial, please star and watch the repo.(I'll update if &gt;50 stars or watch)</h1>
+<h1 id="part-three-todotired-again-if-you-need-the-tutorial-please-star-and-watch-the-repo-ill-update-part-three-all-5-part-if-20-stars-or-watch">Part Three: TODO:tired again. If you need the tutorial, please star and watch the repo. I'll update Part Three (all 5 part), if &gt;20 stars or watch.</h1>
 <h2 id="what-we-got">What we got:</h2>
 <figure data-type="image" tabindex="3"><img src="https://blog.dltech.xyz/post-images/1594476102427.png" alt="demo app" loading="lazy"></figure>
 <h2 id="for-more-资料收集not-so-related-about-the-app-so-itll-be-in-chinese">For more:  资料收集(not so related about the app, so it'll be in Chinese)：</h2>
