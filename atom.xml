@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-11T14:32:39.068Z</updated>
+    <updated>2020-07-15T07:04:23.710Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -21,6 +21,7 @@
 <p>https://github.com/StevenJokes/pytorch-andriod-greatdemo</p>
 <h2 id="my-blog">My blog:</h2>
 <p>https://blog.dltech.xyz/post/pytorch-android/</p>
+<h1 id="part-one">Part One:</h1>
 <p>I'm a Chinese guy and a Win10 user! So if you can't understand my sentences, give me an issue and I will do my best to help you. Linux users can also get help from my article too.</p>
 <p>I'll share you all my research process. (It cost me two days and two nights..) And I will tell you <strong>how to have a demo app for android in English</strong>.</p>
 <p>I'm new to Android and PyTorch too. If you are learning or have mastered in them, you can telegram me and maybe we will become good friends. And I'm applying for a job now, please email me at llgg8679@qq.com if you like me.</p>
@@ -77,9 +78,29 @@ We can see how many times I tried!(Cost me 6 hours. cry!)<br>
 <p><img src="https://blog.dltech.xyz/post-images/1594475886535.png" alt="empty activity" loading="lazy"><br>
 <img src="https://blog.dltech.xyz/post-images/1594475910656.png" alt="configure" loading="lazy"><br>
 <img src="https://blog.dltech.xyz/post-images/1594475946465.png" alt="enable" loading="lazy"></p>
-<h2 id="todoim-tired-now-ill-get-part2-done-3-parts-in-all-in-two-daysif-50-stars-follow-me-in-githubhttpsgithubcomstevenjokes-and-then-you-will-get-the-newest-article">TODO:I'm tired now. I'll get part2 done (3 parts in all) in two days(if &gt; 50 stars). Follow me in github:https://github.com/StevenJokes and , then you will get the newest article.</h2>
+<hr>
+<p>#Part Two:</p>
+<h2 id="buildgradle-appear">build.gradle appear!</h2>
+<p>Then I found I don't have &quot;build.gradle(Module: app)&quot;</p>
+<p>Then I learnt some knowledge : https://developer.android.com/training/basics/firstapp/creating-project<br>
+Gradle Scripts &gt; build.gradle<br>
+There are two files with this name: one for the project, &quot;Project: My First App,&quot; and one for the app module, &quot;Module: app.&quot; Each module has its own build.gradle file, but this project currently has just one module. Use each module's build.file to control how the Gradle plugin builds your app. For more information about this file, see Configure your build.</p>
+<p><img src="https://blog.dltech.xyz/post-images/1594795763502.png" alt="sync" loading="lazy"><br>
+<img src="https://blog.dltech.xyz/post-images/1594795946268.png" alt="sync_success" loading="lazy"><br>
+<img src="https://blog.dltech.xyz/post-images/1594795976147.png" alt="appear" loading="lazy"></p>
+<h2 id="add-implementation">add implementation</h2>
+<p><code>jcenter()</code> has already appear</p>
+<pre><code class="language-java">implementation'org.pytorch:pytorch_android:1.5.0'
+implementation'org.pytorch:pytorch_android_torchvision:1.5.0'
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://blog.dltech.xyz/post-images/1594796106557.png" alt="implementation" loading="lazy"></figure>
+<h2 id="move-some-files-and-rename">move some files and rename</h2>
+<figure data-type="image" tabindex="2"><img src="https://blog.dltech.xyz/post-images/1594796500856.png" alt="new_dir" loading="lazy"></figure>
+<p>move<br>
+<img src="https://blog.dltech.xyz/post-images/1594796415709.png" alt="" loading="lazy"></p>
+<h1 id="part-three-todotired-again-if-you-need-the-tutorial-please-star-and-watch-the-repoill-update-if-50-stars-or-watch">Part Three: TODO:tired again. If you need the tutorial, please star and watch the repo.(I'll update if &gt;50 stars or watch)</h1>
 <h2 id="what-we-got">What we got:</h2>
-<figure data-type="image" tabindex="1"><img src="https://blog.dltech.xyz/post-images/1594476102427.png" alt="demo app" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://blog.dltech.xyz/post-images/1594476102427.png" alt="demo app" loading="lazy"></figure>
 <h2 id="for-more-资料收集not-so-related-about-the-app-so-itll-be-in-chinese">For more:  资料收集(not so related about the app, so it'll be in Chinese)：</h2>
 <p>搭个model server，远程call api就好了，目前javascript没有很好的植入，做的还行的就是tf javascript。Torchserve可用来host pt模型<br>
 torch mobile模式<br>
