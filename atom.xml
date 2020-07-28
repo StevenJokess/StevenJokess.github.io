@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-07-28T16:54:56.761Z</updated>
+    <updated>2020-07-28T18:29:46.252Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -190,6 +190,17 @@ alibaba/MNN​github.com<br>
         </link>
         <updated>2020-07-05T13:13:51.000Z</updated>
         <content type="html"><![CDATA[<p>Windows Terminal + WSL 2+ VS Code （online: CodeSpaces) + Stack Overflow + O'reilly + GitHub + winget</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[简历]]></title>
+        <id>https://blog.dltech.xyz/post/jian-li/</id>
+        <link href="https://blog.dltech.xyz/post/jian-li/">
+        </link>
+        <updated>2020-07-03T07:06:50.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://blog.dltech.xyz/post-images/1593844414259.png" alt="" loading="lazy"><br>
+此外还有划水成就，2018年度知乎两亿字、酷我音乐很多首（真忘了）</p>
+<p>有意向的请发件到：llgg8679@qq.com</p>
 ]]></content>
     </entry>
     <entry>
@@ -509,15 +520,6 @@ https://www.chuchur.com/article/windows-terminal-beautify
         </link>
         <updated>2020-06-27T18:12:17.000Z</updated>
         <content type="html"><![CDATA[<p>https://leetcode.com/submissions/detail/359042687/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[字符串]]></title>
-        <id>https://blog.dltech.xyz/post/zi-fu-chuan/</id>
-        <link href="https://blog.dltech.xyz/post/zi-fu-chuan/">
-        </link>
-        <updated>2020-06-10T02:09:53.000Z</updated>
-        <content type="html"><![CDATA[<p>https://github.com/StevenJokes/Alg_Py_Xiangjie/blob/master/%E7%AC%AC4%E7%AB%A0/zifuchuan.py</p>
 ]]></content>
     </entry>
 </feed>
