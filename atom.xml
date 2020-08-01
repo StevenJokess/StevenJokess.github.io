@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-08-01T12:46:56.205Z</updated>
+    <updated>2020-08-01T12:50:42.925Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://blog.dltech.xyz/images/avatar.png</logo>
     <icon>https://blog.dltech.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Steven Jokes</rights>
+    <entry>
+        <title type="html"><![CDATA[Gitalk]]></title>
+        <id>https://blog.dltech.xyz/post/gitalk/</id>
+        <link href="https://blog.dltech.xyz/post/gitalk/">
+        </link>
+        <updated>2020-08-01T12:49:36.000Z</updated>
+        <content type="html"><![CDATA[<p>因为我StevenJokes.github.io是私有的，后来我发现可以转到另一个repo<img src="https://blog.dltech.xyz/post-images/1596286185401.png" alt="StevenJokes" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Teach you PyTorch mobile for android by creating a demo app hand-by-hand]]></title>
         <id>https://blog.dltech.xyz/post/pytorch-android/</id>
@@ -511,15 +520,6 @@ https://www.chuchur.com/article/windows-terminal-beautify
 <li>板料成形CAE设计及应用：基于Dynaform（英文） [CAE Design and Application of Sheet Metal Forming：Based on Dynaform]：<a href="https://item.jd.com/12628936.html">https://item.jd.com/12628936.html</a></li>
 </ul>
 <p>https://1drv.ms/w/s!AmvfcA2CS8LNgskmXQJEE8PgHvVMrA</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Leetcode_Container With Most Water]]></title>
-        <id>https://blog.dltech.xyz/post/leetcode_container-with-most-water/</id>
-        <link href="https://blog.dltech.xyz/post/leetcode_container-with-most-water/">
-        </link>
-        <updated>2020-06-27T18:12:17.000Z</updated>
-        <content type="html"><![CDATA[<p>https://leetcode.com/submissions/detail/359042687/</p>
 ]]></content>
     </entry>
 </feed>
