@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.dltech.xyz</id>
     <title>Steven Jokes</title>
-    <updated>2020-09-22T05:33:11.826Z</updated>
+    <updated>2020-10-21T13:56:39.154Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.dltech.xyz"/>
     <link rel="self" href="https://blog.dltech.xyz/atom.xml"/>
@@ -210,8 +210,10 @@ alibaba/MNN​github.com<br>
         <link href="https://blog.dltech.xyz/post/jian-li/">
         </link>
         <updated>2020-07-03T07:06:50.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://blog.dltech.xyz/post-images/1593844414259.png" alt="" loading="lazy"><br>
-此外还有划水成就，2018年度知乎两亿字、酷我音乐很多首（真忘了）</p>
+        <content type="html"><![CDATA[<!--![](https://blog.dltech.xyz/post-images/1593844414259.png)
+-->
+<p><img src="https://blog.dltech.xyz/post-images/1603288477936.jpg" alt="Resume" loading="lazy"><br>
+Github: https://github.com/StevenJokess/</p>
 <p>有意向的请发件到：llgg8679@qq.com</p>
 ]]></content>
     </entry>
